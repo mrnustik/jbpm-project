@@ -12,13 +12,13 @@
     <work-item-handlers>
         <work-item-handler>
             <resolver>mvel</resolver>
-            <identifier>new org.jbpm.process.workitem.email.EmailWorkItemHandler("smtp.gmail.com", "587", "pv207.email.worker@gmail.com", "Karel1234")</identifier>
+            <identifier>new org.jbpm.process.workitem.email.EmailWorkItemHandler("smtp.gmail.com", "587", "pv207.email.worker@gmail.com", "Karel1234", "true")</identifier>
             <parameters/>
             <name>Email</name>
         </work-item-handler>
         <work-item-handler>
             <resolver>mvel</resolver>
-            <identifier>new org.jbpm.process.workitem.rest.RESTWorkItemHandler("", "")</identifier>
+            <identifier>new org.jbpm.process.workitem.rest.RESTWorkItemHandler("", "", classLoader)</identifier>
             <parameters/>
             <name>Rest</name>
         </work-item-handler>
