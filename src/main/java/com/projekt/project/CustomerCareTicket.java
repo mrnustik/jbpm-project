@@ -6,12 +6,44 @@ package com.projekt.project;
 
 public class CustomerCareTicket implements java.io.Serializable {
 
-    static final long serialVersionUID = 1L;
+	static final long serialVersionUID = 1L;
 
-    public CustomerCareTicket() {
-    }
+	private java.lang.String problemDescription;
+	private java.lang.Integer ticketType;
+	private java.lang.String problemSolution;
 
+	public CustomerCareTicket() {
+	}
 
+	public java.lang.String getProblemDescription() {
+		return this.problemDescription;
+	}
 
+	public void setProblemDescription(java.lang.String problemDescription) {
+		this.problemDescription = problemDescription;
+	}
+
+	public java.lang.Integer getTicketType() {
+		return this.ticketType;
+	}
+
+	public void setTicketType(java.lang.Integer ticketType) {
+		this.ticketType = ticketType;
+	}
+
+	public java.lang.String getProblemSolution() {
+		return this.problemSolution;
+	}
+
+	public void setProblemSolution(java.lang.String problemSolution) {
+		this.problemSolution = problemSolution;
+	}
+
+	public CustomerCareTicket(java.lang.String problemDescription,
+			java.lang.Integer ticketType, java.lang.String problemSolution) {
+		this.problemDescription = problemDescription;
+		this.ticketType = ticketType;
+		this.problemSolution = problemSolution;
+	}
 
 }
