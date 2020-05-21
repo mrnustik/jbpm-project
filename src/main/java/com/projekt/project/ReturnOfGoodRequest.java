@@ -6,12 +6,34 @@ package com.projekt.project;
 
 public class ReturnOfGoodRequest implements java.io.Serializable {
 
-    static final long serialVersionUID = 1L;
+	static final long serialVersionUID = 1L;
 
-    public ReturnOfGoodRequest() {
-    }
+	private java.lang.String customerEmail;
+	private java.lang.String complaint;
 
+	public ReturnOfGoodRequest() {
+	}
 
+	public java.lang.String getCustomerEmail() {
+		return this.customerEmail;
+	}
 
+	public void setCustomerEmail(java.lang.String customerEmail) {
+		this.customerEmail = customerEmail;
+	}
+
+	public java.lang.String getComplaint() {
+		return this.complaint;
+	}
+
+	public void setComplaint(java.lang.String complaint) {
+		this.complaint = complaint;
+	}
+
+	public ReturnOfGoodRequest(java.lang.String customerEmail,
+			java.lang.String complaint) {
+		this.customerEmail = customerEmail;
+		this.complaint = complaint;
+	}
 
 }
