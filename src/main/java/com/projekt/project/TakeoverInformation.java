@@ -6,12 +6,33 @@ package com.projekt.project;
 
 public class TakeoverInformation implements java.io.Serializable {
 
-    static final long serialVersionUID = 1L;
+	static final long serialVersionUID = 1L;
 
-    public TakeoverInformation() {
-    }
+	private java.util.Date date;
+	private java.lang.String notes;
 
+	public TakeoverInformation() {
+	}
 
+	public java.util.Date getDate() {
+		return this.date;
+	}
 
+	public void setDate(java.util.Date date) {
+		this.date = date;
+	}
+
+	public java.lang.String getNotes() {
+		return this.notes;
+	}
+
+	public void setNotes(java.lang.String notes) {
+		this.notes = notes;
+	}
+
+	public TakeoverInformation(java.util.Date date, java.lang.String notes) {
+		this.date = date;
+		this.notes = notes;
+	}
 
 }
