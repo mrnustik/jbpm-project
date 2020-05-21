@@ -6,12 +6,45 @@ package com.projekt.project;
 
 public class RequirementsForGoods implements java.io.Serializable {
 
-    static final long serialVersionUID = 1L;
+	static final long serialVersionUID = 1L;
 
-    public RequirementsForGoods() {
-    }
+	private java.lang.Integer itemsCount;
+	private java.lang.Integer requiredStorageWidth;
+	private java.lang.Integer requiredStorageHeight;
 
+	public RequirementsForGoods() {
+	}
 
+	public java.lang.Integer getItemsCount() {
+		return this.itemsCount;
+	}
 
+	public void setItemsCount(java.lang.Integer itemsCount) {
+		this.itemsCount = itemsCount;
+	}
+
+	public java.lang.Integer getRequiredStorageWidth() {
+		return this.requiredStorageWidth;
+	}
+
+	public void setRequiredStorageWidth(java.lang.Integer requiredStorageWidth) {
+		this.requiredStorageWidth = requiredStorageWidth;
+	}
+
+	public java.lang.Integer getRequiredStorageHeight() {
+		return this.requiredStorageHeight;
+	}
+
+	public void setRequiredStorageHeight(java.lang.Integer requiredStorageHeight) {
+		this.requiredStorageHeight = requiredStorageHeight;
+	}
+
+	public RequirementsForGoods(java.lang.Integer itemsCount,
+			java.lang.Integer requiredStorageWidth,
+			java.lang.Integer requiredStorageHeight) {
+		this.itemsCount = itemsCount;
+		this.requiredStorageWidth = requiredStorageWidth;
+		this.requiredStorageHeight = requiredStorageHeight;
+	}
 
 }
