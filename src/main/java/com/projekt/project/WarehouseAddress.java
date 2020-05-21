@@ -6,12 +6,44 @@ package com.projekt.project;
 
 public class WarehouseAddress implements java.io.Serializable {
 
-    static final long serialVersionUID = 1L;
+	static final long serialVersionUID = 1L;
 
-    public WarehouseAddress() {
-    }
+	private java.lang.String street;
+	private java.lang.Integer streetNumber;
+	private java.lang.String city;
 
+	public WarehouseAddress() {
+	}
 
+	public java.lang.String getStreet() {
+		return this.street;
+	}
 
+	public void setStreet(java.lang.String street) {
+		this.street = street;
+	}
+
+	public java.lang.Integer getStreetNumber() {
+		return this.streetNumber;
+	}
+
+	public void setStreetNumber(java.lang.Integer streetNumber) {
+		this.streetNumber = streetNumber;
+	}
+
+	public java.lang.String getCity() {
+		return this.city;
+	}
+
+	public void setCity(java.lang.String city) {
+		this.city = city;
+	}
+
+	public WarehouseAddress(java.lang.String street,
+			java.lang.Integer streetNumber, java.lang.String city) {
+		this.street = street;
+		this.streetNumber = streetNumber;
+		this.city = city;
+	}
 
 }
